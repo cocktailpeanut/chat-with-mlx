@@ -722,7 +722,7 @@ with gr.Blocks(fill_height=True, theme=GusStyle(), css=css) as demo:
 def app(port, share):
     print(f"Starting MLX Chat on port {port}")
     print(f"Sharing: {share}")
-    demo.launch(inbrowser=True, share=share, server_port=port)
+    demo.launch(inbrowser=False, share=share, server_port=port)
 
 
 def main():
